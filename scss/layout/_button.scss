@@ -1,0 +1,96 @@
+@use '../utils' as u;
+
+#bill, #people {
+    width: u.rem(375);
+    height: u.rem(45);
+    border-radius: u.rem(6);
+    border: none;
+    background-color: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+
+    @include u.breakpoint-down(medium) {
+        width: u.rem(305);
+        padding-right: u.rem(16);
+    }
+    &:focus {
+       outline: 3px solid var(--strong-cyan);
+    }
+}
+
+
+
+#bill {
+    background-image: url(/images/icon-dollar.svg);
+}
+#people {
+    background-image: url(/images/icon-person.svg);
+    
+}
+
+#bill, #people {
+    padding-left: u.rem(8);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-position-x: u.rem(16);
+}
+
+ .btn-tips, #custom {
+    width: u.rem(115);
+    height: u.rem(50);
+    text-align: center;
+    border-radius: u.rem(6);
+    border: none;
+    cursor: pointer;
+    
+    @include u.breakpoint-down(medium) {
+        width: u.rem(152.5);
+        height: u.rem(50);
+    }
+}
+
+.btn-tips {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-grayish-cyan);
+    
+    &:hover {
+        background-color: var(--strong-cyan);
+        color: var(--very-dark-cyan);
+    }
+}
+
+.btn {
+    @include u.breakpoint-down(medium) {
+        width: u.rem(315);
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+#custom {
+    background-color: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    &:focus {
+        outline: 3px solid var(--strong-cyan);
+     }
+}
+
+#reset {
+    margin-top: u.rem(90);
+    width: u.rem(330);
+    height: u.rem(50);
+    background-color: var(--strong-cyan);
+    border: none;
+    border-radius: 8px;
+
+    @include u.breakpoint-down(medium) {
+        margin-top: u.rem(16);
+        width: u.rem(280);
+    }
+  
+    &:hover {
+        background-color: var(--cyan);
+    }
+
+    &:disabled {
+        background-color: var(--greenish-cyan);
+    }
+}

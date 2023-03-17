@@ -1,0 +1,55 @@
+@use '../utils' as u;
+
+body {
+    font-family: u.$smono;
+}
+
+#bill, #people {
+    font-size: u.rem(24);
+    font-family: u.$smono;
+    text-align: right;
+
+    @include u.breakpoint-down(medium) {
+        font-size: u.rem(18);
+    }
+}
+.btn-tips, #custom {
+    font-size: u.rem(28);
+    font-family: u.$smono;
+}
+
+.header {
+    color: var(--greenish-cyan);
+}
+
+#custom {
+    color: var(--greenish-cyan);
+}
+.amount {
+    font-size: u.rem(48);
+    text-align: right;
+    color: var(--strong-cyan);
+
+    @include u.breakpoint-down(medium) {
+        font-size: u.rem(32);
+    }
+}
+
+small {
+    color: var(--grayish-cyan)
+}
+
+
+
+#reset {
+    font-size: u.rem(18);
+    font-family: u.$smono;
+    text-transform: uppercase;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    &a {
+        color: hsl(228, 45%, 44%);
+      }
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <header role="banner">
+      <img src="images/logo.svg" alt="splitter logo" />
+    </header>
+
+    <main role="main">
+      <div class="container">
+        <div class="container-one">
+          <div class="bill-input">
+            <p class="header">Bill</p>
+            <input
+              type="number"
+              id="bill"
+              placeholder="0"
+              min="0"
+              onkeydown="active()"
+            />
+          </div>
+
+          <div class="tips-input">
+            <p class="header">Select Tip %</p>
+            <div class="btn">
+              <button class="btn-tips" onclick="getTip(0.05)">5%</button>
+              <button class="btn-tips" onclick="getTip(0.1)">10%</button>
+              <button class="btn-tips" onclick="getTip(0.15)">15%</button>
+              <button class="btn-tips" onclick="getTip(0.25)">25%</button>
+              <button class="btn-tips" onclick="getTip(0.5)">50%</button>
+              <input
+                type="text"
+                id="custom"
+                placeholder="Custom"
+                onkeydown="enterPressed(event)"
+              />
+            </div>
+          </div>
+
+          <div class="people-input">
+            <div class="people-banner">
+              <p class="header">Number of People</p>
+              <p id="warning"></p>
+            </div>
+            <input
+              type="number"
+              id="people"
+              placeholder="0"
+              min="0"
+              onkeypress="basic()"
+            />
+          </div>
+        </div>
+
+        <div class="container-two">
+          <div class="summary">
+            <div class="per">
+              <p class="text">Tip Amount <br /><small>/ person</small></p>
+              <p id="tips" class="amount">$0.00</p>
+            </div>
+            <div class="per">
+              <p class="text">Total <br /><small>/ person</small></p>
+              <p id="total" class="amount">$0.00</p>
+            </div>
+          </div>
+          <button id="reset" onclick="reset()" disabled>reset</button>
+        </div>
+      </div>
+    </main>
+    <footer role="contentinfo">
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Noor Rahmi</a>.
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>

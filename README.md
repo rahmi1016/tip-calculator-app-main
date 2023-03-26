@@ -30,14 +30,15 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/rahmi1016/tip-calculator-app-main))
+- Live Site URL: (https://rahmi1016.github.io/tip-calculator-app-main/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
+- SCSS
 - CSS custom properties
 - Flex
 - CSS Grid

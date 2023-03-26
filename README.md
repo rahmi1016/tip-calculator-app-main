@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/rahmi1016/tip-calculator-app-main
-- Live Site URL: https://rahmi1016.github.io/tip-calculator-app-main/
+- Solution URL:[github page](https://github.com/rahmi1016/tip-calculator-app-main)
+- Live Site URL: [live site](https://rahmi1016.github.io/tip-calculator-app-main/)
 
 ## My process
 
